@@ -1,0 +1,14 @@
+:root {
+  --primary: hsl(152, 60%, 18%);
+  --primary-foreground: hsl(60, 30%, 96%);
+  --accent: hsl(45, 80%, 55%);
+  --accent-foreground: hsl(152, 60%, 12%);
+  --background: hsl(60, 20%, 98%);
+  --foreground: hsl(152, 30%, 10%);
+  --secondary: hsl(152, 20%, 94%);
+  --muted: hsl(152, 15%, 92%);
+  --muted-foreground: hsl(152, 20%, 40%);
+  --card: hsl(0, 0%, 100%);
+  --border: hsl(152, 15%, 88%);
+  --destructive: hsl(0, 84%, 60%);
+}

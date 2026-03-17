@@ -1,0 +1,9 @@
+.admin-sidebar {
+  @apply fixed left-0 top-0 h-full w-64 bg-primary text-primary-foreground z-50;
+}
+.admin-nav-item {
+  @apply flex items-center gap-3 px-4 py-3 rounded-lg hover:bg-white/10 transition-colors cursor-pointer text-sm font-medium;
+}
+.admin-nav-item.active {
+  @apply bg-accent text-accent-foreground;
+}
