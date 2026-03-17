@@ -40,8 +40,8 @@ AUTH_USER_MODEL = 'biomim.User'
 ALLOWED_HOSTS = [
     'localhost',
     '127.0.0.1',
-    "biomimbackend.onrender.com",
-    "biomim.onrender.com",
+    "projet-biomim-backend.onrender.com",
+    "projet-biomim.onrender.com",
     
 ]
 
@@ -118,8 +118,8 @@ CORS_ALLOWED_ORIGINS = [
     "http://localhost:3000",
     "http://127.0.0.1:5173",
     "http://127.0.0.1:3000",
-    "https://biomimbackend.onrender.com",
-    "https://biomim.onrender.com",
+    "https://projet-biomim-backend.onrender.com",
+    "https://projet-biomim.onrender.com",
 ]
 
 CORS_ALLOW_CREDENTIALS = True
@@ -143,8 +143,8 @@ CSRF_TRUSTED_ORIGINS = [
     'http://localhost:3000',
     'http://127.0.0.1:5173',
     'http://127.0.0.1:3000',
-    "https://biomim.onrender.com",
-    "https://biomimbackend.onrender.com",
+    "https://projet-biomim.onrender.com",
+    "https://projet-biomim-backend.onrender.com",
 ]
 
 #  IMPORTANT: Désactiver CSRF pour l'API
