@@ -13,16 +13,29 @@ api.interceptors.request.use((config) => {
 });
 
 api.interceptors.response.use(
-  (res) => res.data,
-  (err) => {
-    if (err.response?.status === 401) {
-      localStorage.removeItem("biomim_token");
-      localStorage.removeItem("biomim_user");
-      window.location.href = "/admin/connexion";
+  (response) => response,
+  (error) => {
+    if (error.response?.status === 401) {
+      // Redirect to login if not authenticated
+      if (window.location.pathname !== '/login' && window.location.pathname !== '/register') {
+        // Don't auto-redirect, let components handle it
+      }
     }
-    return Promise.reject(err);
+    return Promise.reject(error)
   }
-);
+)
+
+// api.interceptors.response.use(
+//   (res) => res.data,
+//   (err) => {
+//     if (err.response?.status === 401) {
+//       localStorage.removeItem("biomim_token");
+//       localStorage.removeItem("biomim_user");
+//       window.location.href = "/admin/connexion";
+//     }
+//     return Promise.reject(err);
+//   }
+// );
 
 export default api;
 
