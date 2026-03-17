@@ -1,7 +1,7 @@
 import axios from "axios";
 
 const api = axios.create({
-  baseURL: import.meta.env.VITE_API_URL || "https://projet-biomim-backend.onrender.com/api",
+  baseURL: import.meta.env.VITE_API_URL || "https://biomimbackend.onrender.com/api",
   timeout: 10000,
   headers: { "Content-Type": "application/json" },
 });
