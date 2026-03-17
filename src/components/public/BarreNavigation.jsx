@@ -9,6 +9,8 @@ const liens = [
   { label: "Produits", href: "/produits" },
   { label: "Boutique", href: "/boutique" },
   { label: "Recherche", href: "/#recherche" },
+  { label: "Carte", href: "/map" },
+  { label: "Assistant IA", href: "/chat" },
   { label: "Blog", href: "/blog" },
   { label: "Partenaires", href: "/partenaires" },
   { label: "Contact", href: "/contact" },

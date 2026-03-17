@@ -4,13 +4,14 @@ import SectionPlantes from "../../components/public/Sections/SectionPlantes";
 import SectionProduits from "../../components/public/Sections/SectionProduits";
 import SectionRecherche from "../../components/public/Sections/SectionRecherche";
 import SectionPartenaires from "../../components/public/Sections/SectionPartenaires";
-
+import Fonctionnalite from "../../components/public/Sections/Fonctionnalite";
 export default function Accueil() {
   return (
     <>
       <Helmet><title>BioMim – De la plante au médicament</title></Helmet>
       <Hero />
       <SectionPlantes />
+      <Fonctionnalite />
       <SectionProduits />
       <SectionRecherche />
       <SectionPartenaires />

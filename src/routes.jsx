@@ -16,7 +16,8 @@ import Blog from "./page/public/Blog";
 import Article from "./page/public/Article";
 import Partenaires from "./page/public/Partenaires";
 import Contact from "./page/public/Contact";
-
+import ChatBotPage from "./page/public/assistant/ChatBotPage";
+import MapPage from "./page/public/map/MapPage";
 // Pages admin
 import Connexion from "./page/admin/Connexion";
 import TableauDeBord from "./page/admin/TableauDeBord";
@@ -46,6 +47,8 @@ export const routeur = createBrowserRouter([
       { path: "blog/:slug", element: <Article /> },
       { path: "partenaires", element: <Partenaires /> },
       { path: "contact", element: <Contact /> },
+      { path: "chat", element: <ChatBotPage /> },
+      { path: "map", element: <MapPage /> },
     ],
   },
   { path: "/admin/connexion", element: <Connexion /> },

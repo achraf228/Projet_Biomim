@@ -28,7 +28,7 @@ export default function PiedDePage() {
           <div>
             <h4 className="font-serif font-bold text-lg mb-4">Navigation</h4>
             <ul className="space-y-2">
-              {[["Plantes médicinales", "/plantes"], ["Nos produits", "/produits"], ["Boutique", "/boutique"], ["Blog", "/blog"], ["À propos", "/a-propos"]].map(([label, href]) => (
+              {[["Plantes médicinales", "/plantes"], ["Nos produits", "/produits"], ["Boutique", "/boutique"], ["Blog", "/blog"],["Carte", "/map"], ["Assistant IA", "/chat"], ["À propos", "/a-propos"]].map(([label, href]) => (
                 <li key={href}><Link to={href} className="text-primary-foreground/70 hover:text-accent transition-colors text-sm">{label}</Link></li>
               ))}
             </ul>
