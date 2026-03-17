@@ -7,6 +7,7 @@ import Accueil from "./page/public/Accueil";
 import APropos from "./page/public/APropos";
 import CataloguePlantes from "./page/public/plantes/CataloguePlantes";
 import DetailPlante from "./page/public/plantes/DetailPlante";
+import PlantDetailPage from "./page/public/plantes/PlantDetailPage";
 import CatalogueProduits from "./page/public/produits/CatalogueProduits";
 import DetailProduit from "./page/public/produits/DetailProduit";
 import Boutique from "./page/public/marketplace/Boutique";
@@ -38,6 +39,7 @@ export const routeur = createBrowserRouter([
       { path: "a-propos", element: <APropos /> },
       { path: "plantes", element: <CataloguePlantes /> },
       { path: "plantes/:id", element: <DetailPlante /> },
+      { path: "plantes/:slug", element: <PlantDetailPage /> },
       { path: "produits", element: <CatalogueProduits /> },
       { path: "produits/:id", element: <DetailProduit /> },
       { path: "boutique", element: <Boutique /> },

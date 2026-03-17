@@ -437,7 +437,7 @@ export default function MapPage() {
                       return (
                         <a
                           key={plant.id}
-                          href={`/plants/${plant.slug}`}
+                          href={`/plantes/${plant.slug}`}
                           className={`
                             block p-5 rounded-xl border-2 transition-all
                             ${colors.border} ${colors.bg}
